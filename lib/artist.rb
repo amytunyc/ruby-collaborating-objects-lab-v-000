@@ -26,13 +26,14 @@ class Artist
     @@all 
   end  
   
-  def self.find_or_create_by_name(name) 
+  def self.find_or_create_by_name(name) #create new instance if none found
     @@all.each do |artist|
       if artist.name = name
         artist
       else
         self.new(name)
-        
+        name.save
+        name
       end
     end
   end
