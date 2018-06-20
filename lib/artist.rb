@@ -27,7 +27,7 @@ class Artist
   end  
   
   def self.find_or_create_by_name(name) #create new instance if none found
-    self.all 
+    self.all.detect  
   end
   
   def print_songs 
