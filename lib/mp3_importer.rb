@@ -8,5 +8,7 @@ class MP3Importer
   
   def files
   end
-    
+ 
+  def imports 
+  end
 end
