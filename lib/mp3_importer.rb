@@ -12,6 +12,6 @@ class MP3Importer
   end
  
   def import 
-    
+    files.each 
   end
 end
