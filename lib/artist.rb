@@ -31,7 +31,10 @@ class Artist
       if artist.name = name
         artist
       else
-        artist.new(name)
+        self.new(name)
+      end
+    end
+  end
   end
   
 end
