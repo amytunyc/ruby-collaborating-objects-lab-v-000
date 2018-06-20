@@ -27,15 +27,7 @@ class Artist
   end  
   
   def self.find_or_create_by_name(name) #create new instance if none found
-    @@all.each do |artist|
-      if artist.name = name
-        artist
-      else
-        self.new(name)
-        name.save
-        name
-      end
-    end
+    self.all 
   end
   
   def print_songs 
